@@ -1,0 +1,56 @@
+*, *:after, *:before {
+    outline: none;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    position: relative;
+}
+
+body{
+    min-height:100vh;
+    margin:0;
+    position: relative;
+    background-image: url("https://i.imgur.com/aRouDQL.png");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color:
+    rgb(48, 56, 66);
+} body::after{
+    content: '';
+    display: block;
+    height: 90px;
+}
+
+header{
+    overflow: hidden;
+    background-color: #1f2227;
+    padding: 20px 10px;
+    font-family: 'Aldrich', monospace;
+    margin-bottom: 15px;
+} header a {
+    float: left;
+    color: #FF7700;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 24px; 
+    line-height: 25px;
+    border-radius: 5px;
+    transition: color 0.2s;
+} header a.logo{
+    font-size: 36px;
+    padding-left: 20px;
+} header a:hover{
+    color: #ffa551;
+    text-decoration: none;
+} header nav{
+    float: right;
+    padding-right: 20px;
+}
