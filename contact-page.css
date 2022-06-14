@@ -1,0 +1,43 @@
+#contacts {
+    list-style: none;
+    margin-top: 0;
+}
+
+#contacts li {
+    margin: 1em;
+}
+
+#discord {
+    padding: 0.5em;
+    border-radius: 0.5em;
+    background-color: grey;
+}
+
+#discord:hover {
+    background-color: lightgrey;
+}
+
+.contact-method {
+    font-style: normal;
+    text-decoration: none;
+    border: 1%;
+    border-color: black;
+    background-color: grey;
+    position: relative;
+    padding: 0.5em;
+    border-radius: 0.5em;
+    color: white;
+}
+
+.contact-method:hover {
+    background-color: lightgrey;
+}
+
+p {
+    margin: 0.25em;
+}
+
+main {
+    align-content: center;
+    text-align: center;
+}
