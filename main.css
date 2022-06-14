@@ -27,6 +27,12 @@ body{
     height: 90px;
 }
 
+main {
+    margin-left: 1.7%;
+    margin-top: 1%;
+    color: black;
+}
+
 header{
     overflow: hidden;
     background-color: #f1f1f1;
