@@ -26,6 +26,11 @@ body{
     height: 90px;
 }
 
+main {
+    margin-top: 1%;
+    color: black;
+}
+
 header{
     overflow: hidden;
     background-color: #f1f1f1;
@@ -139,4 +144,11 @@ footer {
     transition: color 0.2s;
 } footer a:hover{
     text-decoration: none;
+}
+
+#footnote {
+    position: absolute;
+    font-size: 9pt;
+    bottom: 90px;
+    left: 2px;
 }
