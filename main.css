@@ -100,3 +100,10 @@ footer {
 } footer a:hover{
     text-decoration: none;
 }
+
+#footnote {
+    position: absolute;
+    font-size: 9pt;
+    bottom: 90px;
+    left: 2px;
+}
