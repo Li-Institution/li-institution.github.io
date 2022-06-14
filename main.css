@@ -15,9 +15,8 @@ body{
     min-height:100vh;
     margin:0;
     position: relative;
-    background-image: url("");
+    background-image: url("https://i.imgur.com/quxejvJ.png");
     background-size: cover;
-    background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-color: #cfcfcf;
@@ -63,6 +62,52 @@ header{
       float: none;
     }
 }
+
+
+#huge{
+    color: #000000;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 15px;
+    font-family: 'Kaisei Decol', 'Times New Roman', Times, serif;
+    padding: 7rem;
+    margin: 15px;
+    font-size:64px;
+}
+main{
+    color: #ffffff;
+    background-color: rgba(31, 34, 39, 0.9);
+    border-radius: 15px;
+    width: 75%;
+    margin: auto;
+    text-align: center;
+    margin-top: 4rem;
+    margin-bottom: 15px;
+} main h1{
+    font-family: 'Kaisei Decol', 'Times New Roman', Times, serif;
+    padding-top: 30px;
+    margin: 15px;
+    font-size:35px;
+    color: #FF7700;
+} main p{
+    margin: auto;
+    font-family: 'Kaisei Decol', 'Times New Roman', Times, serif;
+    font-size: 20px;
+    width: 90%;
+} main a{
+    color: #a2ddff;
+    text-decoration: none;
+} main ul{
+    font-family: 'Kaisei Decol', 'Times New Roman', Times, serif;
+    font-size: 20px;
+    width: 90%;
+    list-style-position: inside;
+    margin: auto;
+} main h2{
+    font-family: 'Kaisei Decol', 'Times New Roman', Times, serif;
+    margin: 15px;
+} 
 
 footer {
     overflow: hidden;
