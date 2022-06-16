@@ -17,6 +17,14 @@
     background-color: lightgrey;
 }
 
+#subtitle {
+    margin-bottom: 1em;
+}
+
+main {
+    padding: 1em;
+}
+
 .contact-method {
     font-style: normal;
     text-decoration: none;
