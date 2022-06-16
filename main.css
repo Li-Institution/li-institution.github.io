@@ -146,7 +146,7 @@ footer {
     text-decoration: none;
 }
 
-#footnote {
+.footnote {
     position: absolute;
     font-size: 9pt;
     bottom: 90px;
