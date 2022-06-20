@@ -12,18 +12,9 @@ html {
 }
 
 body{
-    min-height:100vh;
     margin:0;
     position: relative;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
     background-color: #0A0908;
-}
-
-main {
-    margin-top: 1%;
-    color: black;
 }
 
 header{
@@ -80,6 +71,7 @@ header{
     font-size:4em;
     margin-bottom: 4rem;
 }
+
 main{
     color: #ffffff;
     background-color: rgba(31, 34, 39, 0.9);
@@ -181,12 +173,4 @@ footer{
     line-height: 25px;
     border-radius: 1rem;
     transition: 0.5s background-color;
-}
-
-.footnote {
-    position: absolute;
-    color: #ffffff;
-    font-size: 9pt;
-    bottom: 90px;
-    left: 2px;
 }
