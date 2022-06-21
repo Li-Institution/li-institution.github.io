@@ -74,8 +74,6 @@ header{
 
 main{
     color: #ffffff;
-    background-color: rgba(31, 34, 39, 0.9);
-    border-radius: 15px;
     width: 100%;
     margin: auto;
     text-align: center;
@@ -88,10 +86,6 @@ main{
 } main a{
     color: #a2ddff;
     text-decoration: none;
-} main ul{
-    font-family: 'Kaisei Decol', 'Times New Roman', Times, serif;
-    list-style-position: inside;
-    margin: auto;
 } main h2{
     font-size: 2em;
     font-family: 'Kaisei Decol', 'Times New Roman', Times, serif;
@@ -108,7 +102,6 @@ main{
     margin: 0;
     text-align: left;
     width: 60%;
-    justify-content: center;
 } .one h2{
     padding-top: 3rem;
     padding-bottom: 0.2rem;
@@ -117,24 +110,49 @@ main{
     margin-right: 5rem;
     border: transparent;
     border-radius: 100rem;
+} .one iframe{
+    float: right;
+    margin-right: 5rem;
 }
 
 .two{
-    padding: 2rem 0 2rem 3rem;
+    padding: 2rem 3rem 2rem 0;
     background-color: #EAE0D5;
-    text-align: left;
+    text-align: right;
     display: inline-block;
     color: black;
 } .two p{
     display: inline-block;
     margin: 0;
-    text-align: left;
+    text-align: right;
     width: 60%;
-    justify-content: center;
 } .two h2{
     padding-top: 3rem;
     padding-bottom: 0.2rem;
 } .two img{
+    float: left;
+    margin-left: 5rem;
+    border: transparent;
+    border-radius: 0.5rem;
+}
+
+.three{
+    padding: 2rem 0 2rem 3rem;
+    background-color: #5E503F;
+    text-align: left;
+    display: inline-block;
+    color: white;
+    width: 100%;
+} .three p{
+    display: inline-block;
+    margin: 0;
+    text-align: left;
+    width: 60%;
+    justify-content: center;
+} .three h2{
+    padding-top: 3rem;
+    padding-bottom: 0.2rem;
+} .three img{
     float: right;
     margin-right: 5rem;
     border: transparent;
@@ -173,4 +191,26 @@ footer{
     line-height: 25px;
     border-radius: 1rem;
     transition: 0.5s background-color;
+}
+
+.one #contacts img{
+    float: none;
+    border-radius: 0.5rem;
+    margin: 0;
+}
+
+#contacts h2{
+    padding-top: 5rem;
+}
+
+.contact-method{
+    font-family: 'Kaisei Decol', 'Times New Roman', Times, serif;
+    background-color:#3c3f46;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    margin: 1rem 0 1rem 0;  
+    color: white;
+    line-height: 3.5em;
+} .contact-method:hover{
+    background-color:#54545e;
 }
