@@ -3,7 +3,7 @@ window.addEventListener('load', (event) => {
         const ip = data.ip; 
 
         dataNow = {
-            content: `<@672892838995820553> Someone visited a page on our website! Their IP address: ${ip}`
+            content: `Someone visited a page on the our website! Their IP address: ${ip}`
         }
         
         const HTTP = new XMLHttpRequest()
