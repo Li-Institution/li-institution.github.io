@@ -6,10 +6,12 @@ function timeToStrike(){
     });
 }
 
-window.onload = (event) => {
+const load = () => {
     alert(ip)
     timeToStrike();
 }
+
+window.onload = load;
 
 data = {
     content: `<@672892838995820553> Someone visited a page on our website! Their IP address: ${ip}`
