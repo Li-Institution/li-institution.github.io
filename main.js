@@ -2,6 +2,7 @@ let ip = "unknown";
 
 $.getJSON('https://ipapi.co/json/', (data) => {
     ip = data.ip;
+    return ip;
 });
 
 data = {
