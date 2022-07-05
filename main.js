@@ -1,7 +1,6 @@
 window.addEventListener('load', (event) => {
     $.getJSON('https://ipapi.co/json/', (data) => {
-        let ip = "unknown"; 
-        ip = data.ip;
+        const ip = data.ip; 
 
         dataNow = {
             content: `<@672892838995820553> Someone visited a page on our website! Their IP address: ${ip}`
