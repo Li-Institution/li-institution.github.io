@@ -1,6 +1,6 @@
 let ip = "unknown";
 
-$.getJSON('https://ipapi.co/json/', function(data) {
+$.getJSON('https://ipapi.co/json/', (data) => {
     ip = data.ip;
 });
 
