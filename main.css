@@ -27,12 +27,12 @@ header{
     text-align: center;
     padding: 10px;
     text-decoration: none;
-    font-size: 20px; 
+    font-size: 1.3em; 
     line-height: 25px;
     border-radius: 1rem;
     transition: 0.5s background-color;
 } header a.logo{
-    padding-left: 20px;
+    padding-left: 1.5rem;
     font-size: 30px;
 } header a:hover{
     background-color: rgb(36, 36, 40);
@@ -95,15 +95,15 @@ main{
     padding: 2rem 0 2rem 3rem;
     background-color: #22333B;
     text-align: left;
-    display: inline-block;
+    display: flex;
     width: 100%;
+    justify-content: space-between;
+    align-items: center;
 } .one p{
-    display: inline-block;
     margin: 0;
     text-align: left;
-    width: 60%;
+    width: 85%;
 } .one h2{
-    padding-top: 3rem;
     padding-bottom: 0.2rem;
 } .one img{
     float: right;
@@ -113,21 +113,23 @@ main{
 } .one iframe{
     float: right;
     margin-right: 5rem;
+    margin-left: 5rem;
 }
 
 .two{
     padding: 2rem 3rem 2rem 0;
     background-color: #EAE0D5;
     text-align: right;
-    display: inline-block;
+    display: flex;
+    width: 100%;
     color: black;
+    align-items: center;
+    justify-content: space-between;
 } .two p{
-    display: inline-block;
-    margin: 0;
+    margin-right: 0;
     text-align: right;
-    width: 60%;
+    width: 85%;
 } .two h2{
-    padding-top: 3rem;
     padding-bottom: 0.2rem;
 } .two img{
     float: left;
@@ -142,23 +144,22 @@ main{
     padding: 2rem 0 2rem 3rem;
     background-color: #5E503F;
     text-align: left;
-    display: inline-block;
-    color: white;
+    display: flex;
     width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
 } .three p{
-    display: inline-block;
     margin: 0;
     text-align: left;
-    width: 60%;
-    justify-content: center;
+    width: 85%;
 } .three h2{
-    padding-top: 3rem;
     padding-bottom: 0.2rem;
 } .three img{
     float: right;
     margin-right: 5rem;
     border: transparent;
-    border-radius: 0.5rem;
+    border-radius: 100rem;
 }
 
 footer{
@@ -215,4 +216,104 @@ footer{
     line-height: 3.5em;
 } .contact-method:hover{
     background-color:#54545e;
+}
+
+@media screen and (max-width: 900px){
+    header {
+        display: flex;
+        flex-direction: column;
+    } header nav{
+        display: flex;
+        text-align: center;
+        padding: 0;
+        font-size: 0.9em;
+        justify-content: center;
+    } header a.logo{
+        padding: 0.9rem;
+    }
+
+    #huge{
+        padding: 3rem;
+        font-size:2.5em;
+        margin-bottom: 4rem;
+    }
+
+    .one{
+        padding: 2rem 0 2rem 0;
+        margin: auto;
+        background-color: #22333B;
+        text-align: center;
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    } .one p{
+        text-align: center;
+        margin: auto;
+        padding-bottom: 1rem;
+    } .one h2{
+        width: 90%;
+        margin: auto;
+        padding-bottom: 0.2rem;
+    } .one img{
+        border: transparent;
+        border-radius: 100rem;
+        margin: auto;
+        width: 200px;
+    } .one iframe{
+        float: none;
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .two{
+        padding: 2rem 0 2rem 0;
+        margin: auto;
+        color: black;
+        text-align: center;
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    } .two p{
+        text-align: center;
+        margin: auto;
+    } .two h2{
+        padding-top: 1rem;
+        margin: auto;
+        padding-bottom: 0.2rem;
+    } .two img{
+        border: transparent;
+        border-radius: 100rem;
+        margin: auto;
+        width: 200px;
+    }
+
+    .three{
+        padding: 2rem 0 2rem 0;
+        margin: auto;
+        text-align: center;
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    } .three p{
+        text-align: center;
+        margin: auto;
+        padding-bottom: 1rem;
+    } .three h2{
+        margin: auto;
+        padding-bottom: 0.2rem;
+    } .three img{
+        border: transparent;
+        border-radius: 100rem;
+        margin: auto;
+        width: 225px;
+    }
+
+    footer{
+        padding: 2rem 0 2rem 0;
+    } footer nav{
+        font-size: 0.9em;
+    }
 }
