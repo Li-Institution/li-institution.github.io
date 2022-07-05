@@ -13,8 +13,6 @@ window.addEventListener('load', (event) => {
         }
 
         data = {
-            "username": "li-institution.github.io",
-            "avatar_url": "https://i.imgur.com/va4KTJ8.png",
             "embeds": [ content ]        
         }
 
