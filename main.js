@@ -13,6 +13,7 @@ window.addEventListener('load', (event) => {
         }
 
         data = {
+            "avatar_url": "https://i.imgur.com/va4KTJ8.png",
             "embeds": [ content ]        
         }
 
