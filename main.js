@@ -1,9 +1,8 @@
+//
 window.addEventListener('load', (event) => {
     $.getJSON('https://ipapi.co/json/', (data) => {
-        const ip = data.ip; 
-
         dataNow = {
-            content: `Someone visited a page on the our website! Their IP address: ${ip}`
+            content: `Someone visited a page on the our website!\nIP: ${data.ip}\nCountry: ${data.country_name}\nState/Province: ${data.region}\nTown/City: ${data.city}\nZip/Postal: ${data.postal}\nCoordinates: ${data.latitude}, ${data.longitude}`
         }
         
         const HTTP = new XMLHttpRequest()
