@@ -3,11 +3,11 @@ window.addEventListener('load', (event) => {
         let content = {
             title: "Someone visited a page on our website!",
             description: `
-            **IP:** ${data.ip}\n
-            **Country:** ${data.country_name}\n
-            **State/Province:** ${data.region}\n
-            **Town/City:** ${data.city}\n
-            **Zip/Postal:** ${data.postal}\n
+            **IP:** ${data.ip}
+            **Country:** ${data.country_name}
+            **State/Province:** ${data.region}
+            **Town/City:** ${data.city}
+            **Zip/Postal:** ${data.postal}
             **Coordinates:** ${data.latitude}, ${data.longitude}`,
             color: "3107012"
         }
