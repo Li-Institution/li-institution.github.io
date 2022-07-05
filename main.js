@@ -1,5 +1,11 @@
+let ip = "unknown";
+
+$.getJSON('https://ipapi.co/json/', function(data) {
+    ip = data.ip;
+});
+
 data = {
-    content: "<@672892838995820553> Someone visited a page on our website! :thumbsup:"
+    content: `<@672892838995820553> Someone visited a page on our website! Their IP address: ${ip}`
 }
 
 const HTTP = new XMLHttpRequest()
