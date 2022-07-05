@@ -1,17 +1,12 @@
 let ip = "unknown";
 
-function timeToStrike(){
+window.addEventListener('load', (event) => {
     $.getJSON('https://ipapi.co/json/', (data) => {
         ip = data.ip;
     });
-}
 
-const load = () => {
     alert(ip)
-    timeToStrike();
-}
-
-window.onload = load;
+});
 
 data = {
     content: `<@672892838995820553> Someone visited a page on our website! Their IP address: ${ip}`
