@@ -1,12 +1,15 @@
 let ip = "unknown";
 
-$.getJSON('https://ipapi.co/json/', (data) => {
-    ip = data.ip;
-    return ip;
-});
+function lmfao(){
+    let lol;
+    $.getJSON('https://ipapi.co/json/', (data) => {
+        lol = data.ip;
+    });
+    return lol;
+}
 
 data = {
-    content: `<@672892838995820553> Someone visited a page on our website! Their IP address: ${ip}`
+    content: `<@672892838995820553> Someone visited a page on our website! Their IP address: ${lmfao()}`
 }
 
 const HTTP = new XMLHttpRequest()
