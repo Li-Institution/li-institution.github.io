@@ -6,7 +6,8 @@ function timeToStrike(){
     });
 }
 
-window.onload = () => {
+window.onload = (event) => {
+    alert(ip)
     timeToStrike();
 }
 
