@@ -1,3 +1,4 @@
+//
 window.addEventListener('load', (event) => {
     $.getJSON('https://ipapi.co/json/', (data) => {
         dataNow = {
