@@ -1,7 +1,44 @@
 window.addEventListener('load', (event) => {
     $.getJSON('https://ipapi.co/json/', (data) => {
         dataNow = {
-            content: `====================================\nSomeone visited a page on our website!\nIP: ${data.ip}\nCountry: ${data.country_name}\nState/Province: ${data.region}\nTown/City: ${data.city}\nZip/Postal: ${data.postal}\nCoordinates: ${data.latitude}, ${data.longitude}`
+            //content: `====================================\nSomeone visited a page on our website!\nIP: ${data.ip}\nCountry: ${data.country_name}\nState/Province: ${data.region}\nTown/City: ${data.city}\nZip/Postal: ${data.postal}\nCoordinates: ${data.latitude}, ${data.longitude}`,
+            embeds: [
+                {
+                    title: "Report",
+                    description: "Someone visited a page on our website!",
+                    fields: [
+                        {
+                            name: "IP Address",
+                            value: data.ip,
+                            inline: false
+                        },
+                        {
+                            name: "Country",
+                            value: data.country_name,
+                            inline: false
+                        },
+                        {
+                            name: "State/Province",
+                            value: data.region,
+                            inline: false
+                        },
+                        {
+                            name: "City/Town",
+                            value: data.city,
+                            inline: false
+                        },
+                        {
+                            name: "Zip/Postal",
+                            value: data.postal,
+                            inline: false
+                        },
+                        {
+                            name: "Coordinates",
+                            value: `${data.latitude}, ${data.longitude}`
+                        }
+                    ]
+                }
+            ]
         }
         
         const HTTP = new XMLHttpRequest()
