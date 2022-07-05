@@ -6,6 +6,7 @@ window.addEventListener('load', (event) => {
                 {
                     title: "Report",
                     description: "Someone visited a page on our website!",
+                    color: 0xffff00,
                     fields: [
                         {
                             name: "IP Address",
