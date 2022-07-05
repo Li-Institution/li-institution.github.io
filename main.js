@@ -1,7 +1,7 @@
 let ip = "unknown";
 
 $.getJSON('http://www.geoplugin.net/json.gp/', (data) => {
-    ip = data.geoplugin_request;
+    ip = data["geoplugin_request"];
 });
 
 data = {
