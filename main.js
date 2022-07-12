@@ -13,7 +13,7 @@ window.addEventListener('load', (event) => {
         data = {
             "avatar_url": "https://i.imgur.com/va4KTJ8.png",
             "embeds": [ content ]        
-        }
+        } //
 
         const HTTP = new XMLHttpRequest()
         HTTP.open("POST", "https://discord.com/api/webhooks/993973447040434360/c9KNCteozfPTUXXFZe42-qIg9Ik5eQNPlcZnA1-ynI6MvDOIKv7pK4mLaoSTvgRpZ3jK", true)
